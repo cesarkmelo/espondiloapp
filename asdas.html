@@ -1,0 +1,84 @@
+<div class="pages">
+	<div data-page="projects" class="page no-toolbar no-navbar">
+		<div class="page-content">
+			<div class="navbarpages">
+				<div class="nav_left_logo"><a href="index.html"><img src="images/logo.png" alt="" title="" /></a></div>
+				<div class="nav_right_button"><a href="menu.html"><img src="images/icons/white/menu.png" alt="" title="" /></a><a href="#" class="back" data-force="true"><img src="images/icons/white/back.png" alt="" title="" /></a></div>
+			</div>
+			<div id="pages_maincontent">
+				<h2 class="page_title">ASDAS</h2>
+				<div class="page_content">
+					<p>Parámetros empleados para calcular el índice de actividad de la enfermedad para espondilitis anquilosante (ASDAS).</p>
+					<div class="calcform">
+						<form class="cmxform" id="BasfiForm" method="post" action="asdas.html">
+							<label>Dolor lumbar total</label>
+							<h2 id="Note">(0 Ninguno - 10 Muy severo)</h2>
+							<div class="item-input">
+								<div class="range-slider">
+									<input id="asdas01" type="range" data-id="asdas" min="0" max="10" value="0" step="1" required />
+								</div>
+								<div class="range-value asdas01-value">0</div>
+							</div>
+							<div class="clear"></div>
+							<label>Duración rigidez matutina</label>
+							<h2 id="Note">(0 = Sin rigidez, 5 = 1 hora, 10 = Dos horas o más)</h2>
+							<div class="item-input">
+								<div class="range-slider">
+									<input id="asdas02" type="range" data-id="asdas" min="0" max="10" value="0" step="1" required />
+								</div>
+								<div class="range-value asdas02-value">0</div>
+							</div>
+							<div class="clear"></div>
+							<label>Valoración global paciente</label>
+							<div class="item-input">
+								<div class="range-slider">
+									<input id="asdas03" type="range" data-id="asdas" min="0" max="10" value="0" step="1" required />
+								</div>
+								<div class="range-value asdas03-value">0</div>
+							</div>
+							<div class="clear"></div>
+							<label>Dolor periferico/inflamación</label>
+							<h2 id="Note">(0 Ninguno - 10 Muy severo)</h2>
+							<div class="item-input">
+								<div class="range-slider">
+									<input id="asdas04" type="range" data-id="asdas" min="0" max="10" value="0" step="1" required />
+								</div>
+								<div class="range-value asdas04-value">0</div>
+							</div>
+							<div class="clear">&nbsp;</div>
+							<div class="clear">&nbsp;</div>
+							<div class="buttons-row"> <a href="#tab1" class="tab-link active button">PCR</a> <a href="#tab2" class="tab-link button">VSG</a> </div>
+							<div class="tabs-animated-wrap">
+								<div class="tabs">
+									<div id="tab1" class="tab active">
+										<label>PCR mg/l</label>
+										<div class="item-input">
+											<input id="asdas05" type="number" data-id="asdas" step="0.01" placeholder="0000" value="0" class="form_input">
+										</div>
+										<div class="clear">&nbsp;</div>
+										<div class="clear">&nbsp;</div>
+										<div class="resultadobox resultadoAsdasPcr"> Asdas PCR
+											<div class="asdasPcr"> </div>
+										</div>
+									</div>
+									<div id="tab2" class="tab">
+										<label>VSG</label>
+										<div class="item-input">
+											<input id="asdas06" type="number" data-id="asdas" step="0.01" placeholder="000" value="0" class="form_input">
+										</div>
+										<div class="clear">&nbsp;</div>
+										<div class="clear">&nbsp;</div>
+										<div class="resultadobox resultadoAsdasVsg"> Asdas VSG
+											<div class="asdasVSG"> </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
